@@ -5,13 +5,12 @@
   "author": "omid soheili",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest",
     "start": "node server/server.js",
-    "heroku-postbuild":"yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -24,8 +23,6 @@
     "css-loader": "0.28.4",
     "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
-    "jest": "^24.9.0",
-    "live-server": "^1.2.1",
     "moment": "2.18.1",
     "node-sass": "^4.13.0",
     "normalize.css": "7.0.0",
@@ -36,13 +33,16 @@
     "react-modal": "2.2.2",
     "react-redux": "5.0.5",
     "react-router-dom": "4.2.2",
-    "react-test-renderer": "16.0.0",
     "redux": "3.7.2",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
     "uuid": "3.1.0",
     "validator": "8.0.0",
-    "webpack": "3.1.0",
+    "webpack": "3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "react-test-renderer": "16.0.0",
     "webpack-dev-server": "2.5.1"
   }
 }
